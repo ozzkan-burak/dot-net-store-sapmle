@@ -26,3 +26,6 @@ C:\Users\brkoz\OneDrive\Masaüstü\Projects\Store\StoreApp\obj\Debug\net6.0\refi
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\Store\StoreApp\obj\Debug\net6.0\StoreApp.pdb
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\Store\StoreApp\obj\Debug\net6.0\StoreApp.genruntimeconfig.cache
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\Store\StoreApp\obj\Debug\net6.0\ref\StoreApp.dll
+C:\Users\brkoz\OneDrive\Masaüstü\Projects\Store\StoreApp\obj\Debug\net6.0\StoreApp.sourcelink.json
+C:\Users\brkoz\OneDrive\Masaüstü\Projects\Store\StoreApp\obj\Debug\net6.0\StoreApp.RazorAssemblyInfo.cache
+C:\Users\brkoz\OneDrive\Masaüstü\Projects\Store\StoreApp\obj\Debug\net6.0\StoreApp.RazorAssemblyInfo.cs
