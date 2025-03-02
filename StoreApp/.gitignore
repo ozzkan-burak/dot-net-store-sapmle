@@ -1,0 +1,21 @@
+# .NET build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Visual Studio Code settings
+.vscode/
+
+# Rider settings
+.idea/
+*.sln.iml
