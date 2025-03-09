@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\Store\\StoreApp\\StoreApp.csproj": {}
+    "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\StoreApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\Store\\StoreApp\\StoreApp.csproj": {
+    "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\StoreApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\Store\\StoreApp\\StoreApp.csproj",
+        "projectUniqueName": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\StoreApp.csproj",
         "projectName": "StoreApp",
-        "projectPath": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\Store\\StoreApp\\StoreApp.csproj",
+        "projectPath": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\StoreApp.csproj",
         "packagesPath": "C:\\Users\\brkoz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\Store\\StoreApp\\obj\\",
+        "outputPath": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
