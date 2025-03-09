@@ -6,15 +6,17 @@ namespace StoreApp.Controllers
 {
     public class ProductController: Controller
     {
-        public IEnumerable<Product> Index()
-        {
-            var context = new RepositoryContext(
-                new DbContextOptionsBuilder<RepositoryContext>()
-                    .UseSqlite("Data source = C:\\DB\\ProductDb.db")
-                    .Options
-                );
 
-            return context.Products;
+      public readonly RepositoryContext _context;
+
+      public ProductController(RepositoryContext context)
+      {
+          _context = context;
+      }
+        public IActionResult Index()
+        {
+            var model = _context.Products.ToList();
+            return View(model);
         }  
     }
 }
