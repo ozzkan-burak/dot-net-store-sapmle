@@ -23,6 +23,9 @@
         <div>
           <h2>@product.ProductName</h2>
           <p>@product.Price</p>
+          <p>
+            <a href="@Url.Action("GetProduct", "Product", new { id = product.ProductId })">View</a>
+          </p>
         </div>
       }
       <script src="" async defer></script>

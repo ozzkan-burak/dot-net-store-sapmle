@@ -17,6 +17,11 @@ namespace StoreApp.Controllers
         {
             var model = _context.Products.ToList();
             return View(model);
-        }  
+        }
+        public IActionResult GetProduct(int id)
+        {
+          Product product = _context.Products.First(p => p.ProductId.Equals(id));
+          return View(product);
+        }
     }
 }
