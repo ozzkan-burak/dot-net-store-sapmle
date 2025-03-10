@@ -1,8 +1,11 @@
-@{
-  Layout = "_Layout.cshtml";
+
+@section Footer{
+  <div>
+    Only render in index page
+  </div>
 }
 
-@model List<StoreApp.Models.Product>
+@model List<Product>
 
       @foreach (var product in Model)
       {

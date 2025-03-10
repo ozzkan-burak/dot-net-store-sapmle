@@ -18,13 +18,16 @@
     <![endif]-->
     <header>
       Store App : Header
+      @RenderSection("Header", required: false)
     </header>
     <main>
       @RenderBody()
     </main>
     <footer>
       Store App : Footer
+      @RenderSection("Footer", required: false)
     </footer>
+    @await RenderSectionAsync("Scripts", required: false)
     <script src="" async defer></script>
   </body>
 </html>
