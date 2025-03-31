@@ -20,7 +20,6 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header>
-      Store App : Header
       <partial name="_Navbar" />
       @RenderSection("Header", required: false)
     </header>
@@ -32,6 +31,9 @@
       @RenderSection("Footer", required: false)
     </footer>
     @await RenderSectionAsync("Scripts", required: false)
-    <script src="" async defer></script>
+    <script src="~/lib/jquery/jquery.min.js" async defer></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js" async defer></script>
+    <script src="~/js/main.js" async defer></script>
+    <script src="~/lib/font-awesome/js/all.min.js" async defer></script>
   </body>
 </html>
