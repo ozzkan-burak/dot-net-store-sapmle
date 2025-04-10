@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QZSYEVskppMgavaKc3zTR9Spta1v9YlwvMcAY14WGyA=",
+  "Hash": "3jvSa2qIR7XefkrmE8FxSmP0ELLqMMrP5EN+9tYyFyo=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Error.html"
+    },
+    {
+      "Identity": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\images\\default.webp",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "images/default#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4q3yak6lze",
+      "Integrity": "XAH+4VdYZEBTL1R8+Vw4hNVSWcFJJBKULRCJjufwScY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\default.webp"
     },
     {
       "Identity": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\js\\main.js",
@@ -4127,6 +4148,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-qvucSj9FBfPhEjo6c0zbZcISWj7bM2+VFhfaUj9l38A="
+        }
+      ]
+    },
+    {
+      "Route": "images/default.4q3yak6lze.webp",
+      "AssetFile": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\images\\default.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XAH+4VdYZEBTL1R8+Vw4hNVSWcFJJBKULRCJjufwScY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:38:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4q3yak6lze"
+        },
+        {
+          "Name": "label",
+          "Value": "images/default.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XAH+4VdYZEBTL1R8+Vw4hNVSWcFJJBKULRCJjufwScY="
+        }
+      ]
+    },
+    {
+      "Route": "images/default.webp",
+      "AssetFile": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\images\\default.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18260"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XAH+4VdYZEBTL1R8+Vw4hNVSWcFJJBKULRCJjufwScY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 10 Apr 2025 21:38:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XAH+4VdYZEBTL1R8+Vw4hNVSWcFJJBKULRCJjufwScY="
         }
       ]
     },
