@@ -515,6 +515,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -1144,10 +1154,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.0"
     ]
@@ -1184,7 +1200,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -120,3 +120,5 @@ C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\De
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\StoreApp.pdb
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\StoreApp.genruntimeconfig.cache
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\ref\StoreApp.dll
+C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Repositories.dll
+C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Repositories.pdb
