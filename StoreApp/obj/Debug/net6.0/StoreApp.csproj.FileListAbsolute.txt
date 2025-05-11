@@ -94,7 +94,9 @@ C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\De
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Entities.dll
+C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Repositories.dll
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Entities.pdb
+C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Repositories.pdb
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\StoreApp.csproj.AssemblyReference.cache
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\StoreApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\StoreApp.AssemblyInfoInputs.cache
@@ -120,5 +122,3 @@ C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\De
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\StoreApp.pdb
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\StoreApp.genruntimeconfig.cache
 C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\obj\Debug\net6.0\ref\StoreApp.dll
-C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Repositories.dll
-C:\Users\brkoz\OneDrive\Masaüstü\Projects\dot-net-store-sapmle\StoreApp\bin\Debug\net6.0\Repositories.pdb
