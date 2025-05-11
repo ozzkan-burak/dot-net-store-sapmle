@@ -5,7 +5,7 @@
     <div class="card-body">
       <h5 class="card-title">@Model.ProductName</h5>
         <p>@Model.Price.ToString("c")</p>
-        <a asp-action="Get" asp-route-id="@Model.ProductId" class="btn btn-primary">
+        <a asp-action="GetProduct" asp-route-id="@Model.ProductId" class="btn btn-primary">
         <i class="fa-solid fa-arrow-right"></i> Add to cart</a>
         Go somewhere</a>
     </div>
