@@ -14,7 +14,7 @@ namespace Repositories.Contracts
 
     public void Save()
     {
-      throw new NotImplementedException();
+      _context.SaveChanges();
     }
   }
 }
