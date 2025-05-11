@@ -10,7 +10,9 @@ namespace Repositories.Contracts
       _context = context;
       _productRepository = productRepository;
     }
-    public IProductRepository Product => throw new NotImplementedException();
+
+    // Product özelliği artık _productRepository'yi döndürüyor
+    public IProductRepository Product => _productRepository;
 
     public void Save()
     {
