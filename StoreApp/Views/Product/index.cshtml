@@ -1,11 +1,11 @@
 
+@model IQueryable<Product>
+  
 @section Footer{
   <div>
     Only render in index page
   </div>
 }
-
-@model List<Product>
 
   <div class="row my-3">
       @foreach (var product in Model)
