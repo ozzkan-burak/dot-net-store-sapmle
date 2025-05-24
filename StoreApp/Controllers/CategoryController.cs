@@ -12,9 +12,10 @@ namespace StoreApp.Controllers
       _manager = manager;
     }
 
-    public IEnumerable<Category> index()
+    public IActionResult index()
     {
-      return _manager.Category.FindAll(false); // false parametresi, silinmiş kategorileri dahil etmemek için kullanılır
+      var model = _manager.Category.FindAll(false); // false parametresi, silinmiş kategorileri dahil etmemek için kullanılır
+      return View(model);
     }
   }
 }
