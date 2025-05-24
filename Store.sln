@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{85D1E712-5F0B-4F8C-836E-BB6AF0CEB48D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{85D1E712-5F0B-4F8C-836E-BB6AF0CEB48D}.Release|x64.Build.0 = Release|Any CPU
 		{85D1E712-5F0B-4F8C-836E-BB6AF0CEB48D}.Release|x86.ActiveCfg = Release|Any CPU
 		{85D1E712-5F0B-4F8C-836E-BB6AF0CEB48D}.Release|x86.Build.0 = Release|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Debug|x64.Build.0 = Debug|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Debug|x86.Build.0 = Debug|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Release|x64.ActiveCfg = Release|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Release|x64.Build.0 = Release|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Release|x86.ActiveCfg = Release|Any CPU
+		{853B3380-B8B9-4ACF-BAC0-0BA62A00F5D5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
