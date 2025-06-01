@@ -1,5 +1,21 @@
 
 @model IQueryable<Product>
+
+  <div class="row my-3">
+         <h1>Products</h1>
+    <div class="col-md-3">
+      col = 3
+    </div>
+    <div class="col-md-9">
+      col = 9
+      <div class="row">
+        @foreach (var product in Model)
+        {
+          <partial name="_ProductCard" model="@product"/>
+        }
+        </div>
+    </div>
+  </div>
   
 @section Footer{
   <div>
@@ -7,10 +23,4 @@
   </div>
 }
 
-  <div class="row my-3">
-      @foreach (var product in Model)
-      {
-        <partial name="_ProductCard" model="@product"/>
-      }
-  </div
 
