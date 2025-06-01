@@ -1,14 +1,21 @@
 using Microsoft.AspNetCore.Mvc;
 using Repositories;
+using Services.Contracts;
 
 namespace StoreApp.Components
 {
   public class ProductSummary : ViewComponent
   {
-    private readonly RepositoryContext _context;
-    public ProductSummary(RepositoryContext context)
+    private readonly IServiceManager _manager;
+    public ProductSummary(IServiceManager manager)
     {
-      _context = context ?? throw new ArgumentNullException(nameof(context));
+      _manager = manager;
+    }
+    public string Invoke()
+    {
+
+      var productCount = _manager.ProductService.GetAllProducts(false).Count().ToString();
+      return productCount;
     }
   }
 }
