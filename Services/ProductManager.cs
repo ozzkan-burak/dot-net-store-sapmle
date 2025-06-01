@@ -25,5 +25,10 @@ namespace Services
       }
       return product;
     }
+
+    public Product? GetProduct(int id, bool trackChanges)
+    {
+      throw new NotImplementedException();
+    }
   }
 }
