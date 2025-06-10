@@ -8,13 +8,18 @@
   </button>
   <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between" id="navbarNavAltMarkup">
     <ul class="navbar-nav text-white flex-grow-1">
+      <li class="nav-item active mx-3">
         <a class="nav-item active mx-3 text-white" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
+      </li>
+      <li class="nav-item mx-3">
         <a class="nav-item mx-3 text-white" asp-controller="Product" asp-action="Index">Products (@await Component.InvokeAsync("ProductSummary"))</a>
+      </li>
         <a class="nav-item mx-3 text-white" asp-controller="Category" asp-action="Index">Categories</a>
     </ul>
     <ul class="navbar-nav">
-      <a class="nav-item mx-3 text-white" asp-controller="Account" asp-action="Logout">Logout</a>
-      <a class="nav-item mx-3 text-white" asp-controller="Account" asp-action="Profile">Profile</a>
+      <li class="nav-item mx-3">
+        <a class="nav-item mx-3 text-white" asp-controller="Home" asp-area="" asp-action="Index">Web</a>
+      </li>
     </ul>
   </div>
 </nav>
