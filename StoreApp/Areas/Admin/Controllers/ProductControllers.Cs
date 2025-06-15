@@ -1,14 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
+using Services.Contracts;
 
 namespace StoreApp.Areas.Admin.Controllers
-{ }
-public class ProductController : Controller
 {
   [Area("Admin")]
-  public IActionResult Index()
+  public class ProductController : Controller
   {
-    return View();
+
+    private readonly IServiceManager _manager;
+    public ProductController(IServiceManager manager)
+    {
+      _manager = manager;
+    }
+    public IActionResult Index()
+    {
+      var model = _manager.ProductService.GetAllProducts(false);
+      return View(model);
+    }
   }
 }
+
 
 
