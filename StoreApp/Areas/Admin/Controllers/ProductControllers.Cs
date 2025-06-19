@@ -17,6 +17,11 @@ namespace StoreApp.Areas.Admin.Controllers
       var model = _manager.ProductService.GetAllProducts(false);
       return View(model);
     }
+
+    public IActionResult Create()
+    {
+      return View();
+    }
   }
 }
 
