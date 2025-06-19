@@ -1,1 +1,23 @@
 @model Product
+
+<div class="text-center">
+  <div class="display-6">Create Product</div>
+  <hr />
+  <form>
+    <div class="form-grıoup my-3">
+      <label asp-for="ProductName" class="form-label"></label>
+      <input asp-for="ProductName" class="form-control" />
+      <span asp-validation-for="ProductName" class="text-danger"></span>
+    </div>
+    <div class="form-grıoup my-3">
+      <label asp-for="Price" class="form-label"></label>
+      <input asp-for="Price" class="form-control" />
+      <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-grıoup my-3 text-start">
+      <button class="btn btn-primary my-3">
+        <i class="fa fa-save"></i>
+        Save
+    </div>
+  </form>
+</div>
