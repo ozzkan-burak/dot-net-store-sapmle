@@ -1,2 +1,27 @@
+@model IEnumerable<Product>
 
-  <h3>Product Page</h3>
+  <div class="test-center">
+    <div class="display-6">Product Page</div>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (var product in Model)
+        {
+          <tr>
+            <td>@product.ProductId</td>
+            <td>@product.ProductName</td>
+            <td>@product.Price</td>
+            <td>.</td>
+          </tr>
+        }
+    </table>
+  </div>
+  
+
