@@ -12,6 +12,13 @@ namespace Services
     {
       _manager = manager ?? throw new ArgumentNullException(nameof(manager));
     }
+
+    public void CreateProduct(Product product)
+    {
+      _manager.Product.CreateProduct(product);
+      _manager.Save();
+    }
+
     public IEnumerable<Product> GetAllProducts(bool trackChanges)
     {
       return _manager.Product.GetAllProducts(trackChanges);

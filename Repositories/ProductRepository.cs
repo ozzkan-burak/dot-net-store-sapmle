@@ -9,6 +9,9 @@ namespace Repositories
       : base(repositoryContext)
     {
     }
+
+    public void CreateProduct(Product product) => Create(product);
+
     public IQueryable<Product> GetAllProducts(bool trackChanges) => FindAll(trackChanges);
 
     // Interfce
