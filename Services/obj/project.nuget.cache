@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EAqFgsgHQcc=",
+  "dgSpecHash": "npOWteanyrI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\brkoz\\OneDrive\\Masaüstü\\Projects\\dot-net-store-sapmle\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brkoz\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\brkoz\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
