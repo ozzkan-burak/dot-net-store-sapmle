@@ -4,6 +4,7 @@
   <div class="display-6">Create Product</div>
   <hr />
   <form class="text-start" method="post" asp-action="Update">
+    <input asp-for="ProductId" type="hidden" />
     <div class="form-grıoup my-3">
       <label asp-for="ProductName" class="form-label"></label>
       <input asp-for="ProductName" class="form-control" />

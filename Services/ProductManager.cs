@@ -37,5 +37,13 @@ namespace Services
     {
       return _manager.Product.GetOneProduct(id, trackChanges);
     }
+
+    public void UpdateProduct(Product product)
+    {
+      var entity = _manager.Product.GetOneProduct(product.ProductId, true);
+      entity.ProductName = product.ProductName;
+      entity.Price = product.Price;
+      _manager.Save();
+    }
   }
 }
