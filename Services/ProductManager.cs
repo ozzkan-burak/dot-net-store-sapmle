@@ -35,7 +35,7 @@ namespace Services
 
     public Product? GetProduct(int id, bool trackChanges)
     {
-      throw new NotImplementedException();
+      return _manager.Product.GetOneProduct(id, trackChanges);
     }
   }
 }
