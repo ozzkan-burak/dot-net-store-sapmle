@@ -27,12 +27,21 @@
           <tr>
             <td>@product.ProductId</td>
             <td>@product.ProductName</td>
+            <td>Product Description</td>
             <td>@product.Price</td>
             <td>
               <div class="btn-group">
                 <a asp-action="Update" asp-route-id="@product.ProductId" class="btn btn-warning">
                   <i class="fa fa-edit"></i>
                   Update
+                </a>
+                <a asp-action="Delete" asp-route-id="@product.ProductId" class="btn btn-danger">
+                  <i class="fa fa-trash"></i>
+                  Delete
+                </a>
+                <a asp-action="GetProduct" asp-area="" asp-asp-controller="Product"  asp-route-id="@product.ProductId" class="btn btn-info">
+                  <i class="fa fa-search"></i>
+                  Go to Product
                 </a>
             </td>
           </tr>
