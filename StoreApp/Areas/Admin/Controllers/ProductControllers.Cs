@@ -49,6 +49,16 @@ namespace StoreApp.Areas.Admin.Controllers
     {
       return View();
     }
+
+    public IActionResult Delete([FromRoute(Name = "id")] int id)
+    {
+      var product = _manager.ProductService.GetProduct(id, false);
+      if (product != null)
+      {
+          _manager.ProductService.DeleteOneProduct(product);
+      }
+      return RedirectToAction("Index");
+    }
   }
 }
 

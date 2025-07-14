@@ -15,8 +15,19 @@ namespace Services
 
     public void CreateProduct(Product product)
     {
-      _manager.Product.CreateProduct(product);
+      _manager.Product.CreateoneProduct(product);
       _manager.Save();
+    }
+
+    public void DeleteOneProduct(Product product)
+    {
+      Product productFromDb = _manager.Product.GetOneProduct(product.ProductId, false);
+      if (productFromDb is not null)
+      {
+        _manager.Product.DeleteOneProduct(productFromDb);
+        _manager.Save();
+      }
+
     }
 
     public IEnumerable<Product> GetAllProducts(bool trackChanges)
