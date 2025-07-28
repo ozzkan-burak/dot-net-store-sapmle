@@ -4,35 +4,35 @@
   <div class="display-6">Create Product</div>
   <hr />
   <form class="text-start" method="post" asp-action="Create">
-    <div class="form-grıoup my-3">
+    <div class="form-group my-3">
       <label asp-for="CategoryId" class="form-label"></label>
-      <select asp-for="CategoryId" class="form-select">
-        <option value="1">Category 1</option>
-        <option value="2">Category 2</option>
+      <select asp-for="CategoryId" class="form-select" 
+        asp-items="ViewBag.Categories"
+        asp-for="CategoryId">
+        <option value="">Select Category</option>
       </select>
-    </div>
-      <label asp-for="CategoryId" class="form-label"></label>
-      <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Categories"></select>
       <span asp-validation-for="CategoryId" class="text-danger"></span>
-    <div class="form-grıoup my-3">
+    </div>
+    <div class="form-group my-3">
       <label asp-for="ProductName" class="form-label"></label>
       <input asp-for="ProductName" class="form-control" />
       <span asp-validation-for="ProductName" class="text-danger"></span>
     </div>
-    <div class="form-grıoup my-3">
+    <div class="form-group my-3">
       <label asp-for="Price" class="form-label"></label>
       <input asp-for="Price" class="form-control" />
       <span asp-validation-for="Price" class="text-danger"></span>
     </div>
-    <div class="form-grıoup my-3">
+    <div class="form-group my-3">
       <div class="btn-group">
-        <button class="btn btn-primary">
+        <button type="submit" class="btn btn-primary">
           <i class="fa fa-save"></i>
           Save
         </button>
-        <a asp-action="index" class="btn btn-outline-primary">
+        <a asp-action="Index" class="btn btn-outline-primary">
           <i class="fa fa-list"></i>
-          Back</a>
+          Back
+        </a>
       </div>
     </div>
   </form>
