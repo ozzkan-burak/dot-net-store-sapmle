@@ -53,5 +53,17 @@ namespace Services
     {
       return _manager.Product.GetOneProduct(id, trackChanges);
     }
+
+    public ProductDtoForUpdate GetProductForUpdate(int id, bool trackChanges)
+    {
+      var product = GetOneProduct(id, trackChanges);
+      var productDto = _mapper.Map<ProductDtoForUpdate>(product);
+      return productDto;
+    }
+
+    public void UpdateOneProduct(Product product)
+    {
+      throw new NotImplementedException();
+    }
   }
 }
