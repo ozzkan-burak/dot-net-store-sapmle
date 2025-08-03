@@ -9,6 +9,9 @@ namespace Entities.Dtos
     public String? ProductName { get; init; }
     [Required(ErrorMessage = "Price is required.")]
     public decimal Price { get; init; }
+    public String? Summary { get; set; } = String.Empty;
+    public String? ImageUrl { get; set; } = String.Empty;
+
     public int CategoryId { get; init; }
   }
 }
