@@ -61,9 +61,21 @@ namespace Services
       return productDto;
     }
 
-    public void UpdateOneProduct(Product product)
+    public void UpdateOneProduct(ProductDtoForUpdate productDto)
     {
-      throw new NotImplementedException();
+      //var entity = _manager.Product.GetOneProduct(productDto.ProductId, true);
+
+      // entity.ProductName = productDto.ProductName;
+      // entity.Price = productDto.Price;
+      // entity.CategoryId = productDto.CategoryId;
+      var entity = _mapper.Map<Product>(productDto);
+      if (entity is null)
+      {
+        throw new KeyNotFoundException($"Product with id {productDto.ProductId} not found.");
+      }
+      _manager.Product.UpdateOneProduct(entity);
+      _manager.Save();
     }
   }
 }
+

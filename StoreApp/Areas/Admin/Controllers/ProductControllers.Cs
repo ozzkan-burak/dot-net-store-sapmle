@@ -24,11 +24,16 @@ namespace StoreApp.Areas.Admin.Controllers
 
     public IActionResult Create()
     {
-      ViewBag.Categories = new SelectList(_manager.CategoryService.GetAllCategories(false),
+      ViewBag.Categories = GetCategoriesSelectlist();
+      return View();
+    }
+
+    private SelectList GetCategoriesSelectlist()
+    {
+      return new SelectList(_manager.CategoryService.GetAllCategories(false),
       "CategoryId",
       "CategoryName",
       "1");
-      return View();
     }
 
     [HttpPost]
@@ -45,15 +50,22 @@ namespace StoreApp.Areas.Admin.Controllers
 
     public IActionResult Update([FromRoute(Name = "id")] int id)
     {
+      ViewBag.Categories = GetCategoriesSelectlist();
       var model = _manager.ProductService.GetProductForUpdate(id, false);
       return View(model);
     }
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Update(Product product)
+    public IActionResult Update([FromForm] ProductDtoForUpdate product)
     {
-      return View();
+      if (ModelState.IsValid)
+      {
+        _manager.ProductService.UpdateOneProduct(product);
+        return RedirectToAction("Index");
+      }
+      ViewBag.Categories = GetCategoriesSelectlist();
+      return View(product);
     }
 
     public IActionResult Delete([FromRoute(Name = "id")] int id)
