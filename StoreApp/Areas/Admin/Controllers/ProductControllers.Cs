@@ -38,7 +38,7 @@ namespace StoreApp.Areas.Admin.Controllers
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([FromForm] ProductDtoForInsertion productDto, IFormFile? imageFile)
+    public async Task<IActionResult> Create([FromForm] ProductDtoForInsertion productDto, IFormFile imageFile)
     {
       if (ModelState.IsValid)
       {
