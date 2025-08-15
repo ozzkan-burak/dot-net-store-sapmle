@@ -1,13 +1,18 @@
 @model Entities.Models.Product;
-@using Entities.Models;
 
-    <h3>@Model.ProductName</h3>
-    <p>@Model.Price</p>
 
     <div class="btn-group">
         <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Home</a>
         <a class="btn btn-outline-primary" asp-action="Index" asp-controller="Product">Product</a>
     </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h6 class="display-6">@Model.ProductName</h6>
+            <img src="@Model.ImageUrl" class="img-fluid shadow rounded-3 mt-3" width="50%" alt="@Model.ProductName" />
+        </div>
+        <span class="lead text-muted">@Model.Price</span>
+    </div>
+
 
 @section Header{
     <div>
