@@ -64,15 +64,22 @@ namespace StoreApp.Areas.Admin.Controllers
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Update([FromForm] ProductDtoForUpdate product)
+    public async Task<IActionResult> Update([FromForm] ProductDtoForUpdate productDto, IFormFile imageFile)
     {
       if (ModelState.IsValid)
       {
-        _manager.ProductService.UpdateOneProduct(product);
+        string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", imageFile.FileName);
+
+        using (var stream = new FileStream(path, FileMode.Create))
+        {
+          await imageFile.CopyToAsync(stream);
+        }
+        productDto.ImageUrl = String.Concat("/images/", imageFile.FileName);
+        _manager.ProductService.UpdateOneProduct(productDto);
         return RedirectToAction("Index");
       }
       ViewBag.Categories = GetCategoriesSelectlist();
-      return View(product);
+      return View(productDto);
     }
 
     public IActionResult Delete([FromRoute(Name = "id")] int id)

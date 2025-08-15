@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QJWh1YuNd8xKEVJALBxCsIwI6Z0+N2SsUuzjaupNYW4=",
+  "Hash": "penCqzk9fYgIQGL8XSs+U+evRZ659U98awPmYzgiuqY=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nmzh1jd82w",
-      "Integrity": "n2tYzGhfHqsBQXawaAfS6KkVQfZiFqFiJvHiBd6054c=",
+      "Fingerprint": "8r085yhm0f",
+      "Integrity": "1DK1Pu/okTIrFJBPDziBRu+GKfuxdt5HveZ+GUsMViw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\2.jpeg"
@@ -4381,6 +4381,51 @@
       ]
     },
     {
+      "Route": "images/2.8r085yhm0f.jpeg",
+      "AssetFile": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\images\\2.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6343"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1DK1Pu/okTIrFJBPDziBRu+GKfuxdt5HveZ+GUsMViw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 15 Aug 2025 15:20:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8r085yhm0f"
+        },
+        {
+          "Name": "label",
+          "Value": "images/2.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1DK1Pu/okTIrFJBPDziBRu+GKfuxdt5HveZ+GUsMViw="
+        }
+      ]
+    },
+    {
       "Route": "images/2.jpeg",
       "AssetFile": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\images\\2.jpeg",
       "Selectors": [],
@@ -4391,7 +4436,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6932"
+          "Value": "6343"
         },
         {
           "Name": "Content-Type",
@@ -4399,11 +4444,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"n2tYzGhfHqsBQXawaAfS6KkVQfZiFqFiJvHiBd6054c=\""
+          "Value": "\"1DK1Pu/okTIrFJBPDziBRu+GKfuxdt5HveZ+GUsMViw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 03 Aug 2025 14:47:58 GMT"
+          "Value": "Fri, 15 Aug 2025 15:20:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4413,52 +4458,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-n2tYzGhfHqsBQXawaAfS6KkVQfZiFqFiJvHiBd6054c="
-        }
-      ]
-    },
-    {
-      "Route": "images/2.nmzh1jd82w.jpeg",
-      "AssetFile": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\StoreApp\\wwwroot\\images\\2.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6932"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"n2tYzGhfHqsBQXawaAfS6KkVQfZiFqFiJvHiBd6054c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 03 Aug 2025 14:47:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nmzh1jd82w"
-        },
-        {
-          "Name": "label",
-          "Value": "images/2.jpeg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-n2tYzGhfHqsBQXawaAfS6KkVQfZiFqFiJvHiBd6054c="
+          "Value": "sha256-1DK1Pu/okTIrFJBPDziBRu+GKfuxdt5HveZ+GUsMViw="
         }
       ]
     },
