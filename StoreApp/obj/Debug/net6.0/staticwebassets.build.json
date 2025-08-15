@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "penCqzk9fYgIQGL8XSs+U+evRZ659U98awPmYzgiuqY=",
+  "Hash": "Q2Ai+rTu1AIzAgxtHCSjAUUYugf7IoLtdThnUs+hNdY=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -4321,7 +4321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 03 Aug 2025 14:47:32 GMT"
+          "Value": "Fri, 15 Aug 2025 15:33:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4366,7 +4366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 03 Aug 2025 14:47:32 GMT"
+          "Value": "Fri, 15 Aug 2025 15:33:29 GMT"
         },
         {
           "Name": "Cache-Control",
