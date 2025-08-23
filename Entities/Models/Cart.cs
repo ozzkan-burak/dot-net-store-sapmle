@@ -50,10 +50,7 @@ namespace Entities.Models
 
     public int TotalCount => Lines.Sum(e => e.Quantity);
 
-    public void ClearCart()
-    {
-      Lines.Clear();
-    }
+    public void Clear() => Lines.Clear();
 
   }
 }
