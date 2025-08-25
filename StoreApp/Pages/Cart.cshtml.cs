@@ -14,14 +14,14 @@ namespace StoreApp.Pages
       _manager = serviceManager;
     }
 
-    public Cart Cart { get; set; } = new Cart(); // Burada initialize edin
+    public Cart Cart { get; set; } = new Cart();
 
     public string ReturnUrl { get; set; } = "/";
 
     public void OnGet(string returnUrl)
     {
       ReturnUrl = returnUrl ?? "/";
-      Cart = new Cart(); // Veya session'dan yükleyin
+      Cart = new Cart();
     }
 
     public IActionResult OnPost(int productId, string returnUrl)
@@ -32,10 +32,16 @@ namespace StoreApp.Pages
         return NotFound();
       }
 
-      Cart = new Cart(); // Cart'ı initialize edin
-      Cart.AddItem(product, 1); // Artık çalışacak
+      Cart = new Cart();
+      Cart.AddItem(product, 1);
 
-      return RedirectToPage(new { returnUrl = returnUrl });
+      return Page();
+    }
+
+    public IActionResult OnPostRemove(int id, string returnUrl)
+    {
+      Cart.RemoveLine(Cart.Lines.First(cl => cl.Product.ProductId.Equals(id)).Product);
+      return Page();
     }
   }
 }
