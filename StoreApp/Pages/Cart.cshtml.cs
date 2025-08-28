@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Entities.Models;
 using Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
+using StoreApp.Infrastructure.Extensions; // SessionExtensions için
 
 namespace StoreApp.Pages
 {
@@ -15,13 +16,13 @@ namespace StoreApp.Pages
     }
 
     public Cart Cart { get; set; } = new Cart();
-
     public string ReturnUrl { get; set; } = "/";
 
     public void OnGet(string returnUrl)
     {
       ReturnUrl = returnUrl ?? "/";
-      Cart = new Cart();
+      // Session'dan mevcut cart'ı yükle
+      Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
     }
 
     public IActionResult OnPost(int productId, string returnUrl)
@@ -32,16 +33,27 @@ namespace StoreApp.Pages
         return NotFound();
       }
 
-      Cart = new Cart();
+      // Session'dan mevcut cart'ı al
+      Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
       Cart.AddItem(product, 1);
 
-      return Page();
+      // Cart'ı session'a geri kaydet
+      HttpContext.Session.SetJson("cart", Cart);
+
+      return RedirectToPage(new { returnUrl = returnUrl });
     }
 
     public IActionResult OnPostRemove(int id, string returnUrl)
     {
-      Cart.RemoveLine(Cart.Lines.First(cl => cl.Product.ProductId.Equals(id)).Product);
-      return Page();
+      Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
+      var productToRemove = Cart.Lines.FirstOrDefault(cl => cl.Product.ProductId == id)?.Product;
+      if (productToRemove != null)
+      {
+        Cart.RemoveLine(productToRemove);
+        HttpContext.Session.SetJson("cart", Cart);
+      }
+
+      return RedirectToPage(new { returnUrl = returnUrl });
     }
   }
 }
