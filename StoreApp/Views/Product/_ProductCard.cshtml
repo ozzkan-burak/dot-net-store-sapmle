@@ -5,8 +5,10 @@
     <div class="card-body">
       <h5 class="card-title">@Model.ProductName</h5>
         <p>@Model.Price.ToString("c")</p>
-        <div class="row">
+        <div class="btn-group">
         <form id="@Model.ProductId" asp-page="/cart" method="post">
+          <input type="hidden" asp-for="@Model.ProductId" />
+          <input type="hidden" name="returnUrl" value="@Url.Page("/Index")" />
           <button type="submit" class="btn btn-outline-primary">
             <i class="fa-solid fa-cart-shopping"></i>
           </button>

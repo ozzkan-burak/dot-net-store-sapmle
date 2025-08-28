@@ -2,8 +2,36 @@
 @model CartModel
 
 <div class="text-center h-100">
-  <div class="display-6">Cart</div>
+  <div class="display-6">Cart (@Model.Cart.Lines.Count())</div>
   <div class="lead mt-5">
-    <i class="fa fa-shopping-cart mt-1"></i> Your cart is empty
+    @if (Model.Cart.Lines.Count() == 0)
+    {
+      <i class="fa fa-shopping-cart mt-1"></i> <span>Your cart is empty</span>
+    }
+    else
+    {
+      <!-- Cart içeriği buraya gelecek -->
+      <div class="container mt-4">
+        @foreach (var line in Model.Cart.Lines)
+        {
+          <div class="row border-bottom py-2">
+            <div class="col-4">@line.Product.ProductName</div>
+            <div class="col-2">@line.Quantity</div>
+            <div class="col-2">@line.Product.Price.ToString("c")</div>
+            <div class="col-2">@((line.Product.Price * line.Quantity).ToString("c"))</div>
+            <div class="col-2">
+              <form method="post" asp-page-handler="Remove">
+                <input type="hidden" name="id" value="@line.Product.ProductId" />
+                <button type="submit" class="btn btn-sm btn-danger">Remove</button>
+              </form>
+            </div>
+          </div>
+        }
+        <div class="row mt-3">
+          <div class="col-8 text-end"><strong>Total:</strong></div>
+          <div class="col-2"><strong>@Model.Cart.TotalValue.ToString("c")</strong></div>
+        </div>
+      </div>
+    }
   </div>
 </div>
