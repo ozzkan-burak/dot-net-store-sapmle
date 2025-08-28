@@ -9,6 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 builder.Services.AddDbContext<RepositoryContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("sqlconnection"),
@@ -23,8 +29,6 @@ builder.Services.AddScoped<IServiceManager, ServiceManager>();
 builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 
-builder.Services.AddSingleton<Cart>();
-
 builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
@@ -32,6 +36,7 @@ var app = builder.Build();
 app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
+app.UseSession();
 
 app.UseEndpoints(endpoints =>
 {
