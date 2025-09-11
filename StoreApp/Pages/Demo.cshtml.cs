@@ -10,7 +10,7 @@ namespace StoreApp.Pages
     {
       FullName = inputData;
       // Handle form submission
-      return RedirectToPage("/Index");
+      return Page();
     }
   }
 }
