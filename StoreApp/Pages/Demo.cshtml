@@ -1,11 +1,11 @@
 @page
-@model StoreApp.Pages.DemoModel
+@model DemoModel
 @{
 
 }
 
 <div class="my-5 text-center">
-  <div class="diplay-6">Hello @Model.FullName</div>
+  <div class="display-6">Hello @Model.FullName</div>
   <form method="post" asp-page="/demo">
     <div class="form-group">
       <input class="form-control" name="inputData" type="text" placeholder="Type something..." />
