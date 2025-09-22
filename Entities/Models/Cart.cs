@@ -10,7 +10,7 @@ namespace Entities.Models
       Lines = new List<CartLine>();
     }
 
-    public void AddItem(Product product, int quantity)
+    public virtual void AddItem(Product product, int quantity)
     {
       CartLine? line = Lines.Where(l => l.Product.ProductId.Equals(product.ProductId)).FirstOrDefault();
       if (line == null)
@@ -24,7 +24,7 @@ namespace Entities.Models
       }
     }
 
-    public void RemoveLine(Product product)
+    public virtual void RemoveLine(Product product)
     {
       CartLine? line = Lines.Where(l => l.Product.ProductId.Equals(product.ProductId)).FirstOrDefault();
       if (line != null)
@@ -33,7 +33,7 @@ namespace Entities.Models
       }
     }
 
-    public void RemoveItem(Product product, int quantity = 1)
+    public virtual void RemoveItem(Product product, int quantity = 1)
     {
       CartLine? line = Lines.Where(l => l.Product.ProductId.Equals(product.ProductId)).FirstOrDefault();
       if (line != null)
@@ -50,7 +50,7 @@ namespace Entities.Models
 
     public int TotalCount => Lines.Sum(e => e.Quantity);
 
-    public void Clear() => Lines.Clear();
+    public virtual void Clear() => Lines.Clear();
 
   }
 }
