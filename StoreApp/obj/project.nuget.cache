@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+IyshOqquAo=",
+  "dgSpecHash": "OW6V2KTZtdo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\StoreApp\\StoreApp.csproj",
+  "projectFilePath": "C:\\Users\\brkoz\\Desktop\\Projeler\\dot-net-store-sapmle\\StoreApp\\StoreApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brkoz\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\brkoz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
