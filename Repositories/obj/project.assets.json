@@ -1175,11 +1175,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\brkoz\\Desktop\\Projeler\\dot-net-store-sapmle\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\Repositories\\Repositories.csproj",
+      "projectPath": "C:\\Users\\brkoz\\Desktop\\Projeler\\dot-net-store-sapmle\\Repositories\\Repositories.csproj",
       "packagesPath": "C:\\Users\\brkoz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\Repositories\\obj\\",
+      "outputPath": "C:\\Users\\brkoz\\Desktop\\Projeler\\dot-net-store-sapmle\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1201,8 +1201,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\brkoz\\Desktop\\Projects\\dot-net-store-sapmle\\Entities\\Entities.csproj"
+            "C:\\Users\\brkoz\\Desktop\\Projeler\\dot-net-store-sapmle\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\brkoz\\Desktop\\Projeler\\dot-net-store-sapmle\\Entities\\Entities.csproj"
             }
           }
         }
