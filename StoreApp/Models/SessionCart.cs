@@ -1,6 +1,5 @@
 using System.Text.Json.Serialization;
 using Entities.Models;
-using Microsoft.AspNetCore.Http;
 using StoreApp.Infrastructure.Extensions;
 
 namespace StoreApp.Models
@@ -21,6 +20,24 @@ namespace StoreApp.Models
     public override void AddItem(Product product, int quantity)
     {
       base.AddItem(product, quantity);
+      Session?.SetJson<SessionCart>("cart", this);
+    }
+
+    public override void Clear()
+    {
+      base.Clear();
+      Session?.Remove("cart");
+    }
+
+    public override void RemoveItem(Product product, int quantity = 1)
+    {
+      base.RemoveItem(product, quantity);
+      Session?.SetJson<SessionCart>("cart", this);
+    }
+
+    public override void RemoveLine(Product product)
+    {
+      base.RemoveLine(product);
       Session?.SetJson<SessionCart>("cart", this);
     }
   }

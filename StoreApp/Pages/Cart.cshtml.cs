@@ -10,9 +10,10 @@ namespace StoreApp.Pages
   {
     private readonly IServiceManager _manager;
 
-    public CartModel(IServiceManager serviceManager)
+    public CartModel(IServiceManager serviceManager, Cart cartService)
     {
       _manager = serviceManager;
+      Cart = cartService;
     }
 
     public Cart Cart { get; set; } = new Cart();
@@ -22,7 +23,7 @@ namespace StoreApp.Pages
     {
       ReturnUrl = returnUrl ?? "/";
       // Session'dan mevcut cart'ı yükle
-      Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
+      //Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
     }
 
     public IActionResult OnPost(int productId, string returnUrl)
@@ -34,23 +35,23 @@ namespace StoreApp.Pages
       }
 
       // Session'dan mevcut cart'ı al
-      Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
+      //Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
       Cart.AddItem(product, 1);
 
       // Cart'ı session'a geri kaydet
-      HttpContext.Session.SetJson("cart", Cart);
+      // HttpContext.Session.SetJson("cart", Cart);
 
       return RedirectToPage(new { returnUrl = returnUrl });
     }
 
     public IActionResult OnPostRemove(int id, string returnUrl)
     {
-      Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
+      // Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
       var productToRemove = Cart.Lines.FirstOrDefault(cl => cl.Product.ProductId == id)?.Product;
       if (productToRemove != null)
       {
         Cart.RemoveLine(productToRemove);
-        HttpContext.Session.SetJson("cart", Cart);
+        //HttpContext.Session.SetJson("cart", Cart);
       }
 
       return RedirectToPage(new { returnUrl = returnUrl });
