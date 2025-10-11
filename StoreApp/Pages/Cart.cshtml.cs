@@ -22,8 +22,6 @@ namespace StoreApp.Pages
     public void OnGet(string returnUrl)
     {
       ReturnUrl = returnUrl ?? "/";
-      // Session'dan mevcut cart'ı yükle
-      //Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
     }
 
     public IActionResult OnPost(int productId, string returnUrl)
@@ -34,13 +32,9 @@ namespace StoreApp.Pages
         return NotFound();
       }
 
-      // Session'dan mevcut cart'ı al
-      //Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
       Cart.AddItem(product, 1);
 
-      // Cart'ı session'a geri kaydet
-      // HttpContext.Session.SetJson("cart", Cart);
-
+      // Kullanıcıyı doğrudan returnUrl'e yönlendir
       return RedirectToPage(new { returnUrl = returnUrl });
     }
 
