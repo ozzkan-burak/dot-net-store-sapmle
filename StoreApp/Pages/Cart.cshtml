@@ -35,4 +35,11 @@
       </div>
     }
   </div>
+  <div class="mt-4">
+    <a class="btn btn-primary" href="@Model?.ReturnUrl">Continue Shopping</a>
+    @* @if (Model.Cart.Lines.Count() > 0)
+    {
+      <a asp-page="/Checkout" class="btn btn-success ms-3">Proceed to Checkout</a>
+    } *@
+  </div>
 </div>

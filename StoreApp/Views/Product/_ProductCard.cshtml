@@ -8,7 +8,8 @@
         <div class="btn-group">
         <form id="@Model.ProductId" asp-page="/cart" method="post">
           <input type="hidden" asp-for="@Model.ProductId" />
-          <input type="hidden" name="returnUrl" value="@Url.Page("/Index")" />
+          @* <input type="hidden" name="returnUrl" value="@Url.Page("/Index")" /> *@
+          <input type="hidden" name="returnUrl" value="@Url.Action("GetProduct", "Product", new { id = Model.ProductId })" />
           <button type="submit" class="btn btn-outline-primary">
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
