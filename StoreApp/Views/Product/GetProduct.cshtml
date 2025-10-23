@@ -7,7 +7,14 @@
         </div>
         <span class="lead my-4 fw-bold text-center">@Model.Price TL</span>
         <div class="btn-group offset-4 col-4 text-center">
-            <a class="btn btn-primary" asp-action="Index" asp-controller="Home">Home</a>
+            <a class="btn btn-outline-primary" asp-action="Index" asp-controller="Home">Home</a>
+            <form id="@Model.ProductId" method="post" asp-page="/Cart">
+                <input type="hidden" asp-for="ProductId" />
+                <input type="hidden" name="returnUrl" value="@Context.Request.PathAndQuery()" />
+                <button type="submit" class="btn btn-outline-primary">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </form>
             <a class="btn btn-outline-primary" asp-action="Index" asp-controller="Product">Product</a>
         </div>
     </div>
