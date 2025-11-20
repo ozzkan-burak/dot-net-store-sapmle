@@ -18,5 +18,6 @@ namespace Entities.Models
     public string City { get; set; } = string.Empty;
     public bool GiftWrap { get; set; }
     public bool Shipped { get; set; }
+    public DateTime OrderedAt { get; set; } = DateTime.Now;
   }
 }
